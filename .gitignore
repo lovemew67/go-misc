@@ -1,0 +1,12 @@
+# folder
+.vscode
+
+# files
+
+# binary
+go-misc
+go-misc.exe
+
+# golang
+go.mod
+go.sum

@@ -1,0 +1,5 @@
+.vscode
+coverage.*
+docs
+go-misc
+go-misc.exe

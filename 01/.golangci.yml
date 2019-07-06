@@ -1,0 +1,19 @@
+run:
+  deadline: 5m
+
+linters:
+  enable:
+    - interfacer
+    - unconvert
+    - misspell
+    - gocyclo
+
+linters-settings:
+  dupl:
+    threshold: 400 
+  lll:   
+    line-length: 170
+  gocyclo:
+    min-complexity: 20
+  golint:
+    min-confidence: 0.75

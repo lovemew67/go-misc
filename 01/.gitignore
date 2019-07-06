@@ -1,0 +1,10 @@
+# folder
+.vscode
+docs
+
+# files
+coverage.*
+
+# binary
+01
+01.exe
