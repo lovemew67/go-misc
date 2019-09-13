@@ -1,13 +1,13 @@
 package main
 
 import (
-	"fmt"
+	"log"
 )
 
 func init() {
-	fmt.Println("initializing package: 02")
+	log.Println("initializing package: 02")
 }
 
 func main() {
-	fmt.Println("Hello World: 02")
+	log.Println("Hello World: 02")
 }
