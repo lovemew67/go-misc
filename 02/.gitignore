@@ -1,11 +1,9 @@
 # folder
-docs/
 
 # files
-/coverage.*
 
 # binary
-/01
-/01.exe
+/02
+/02.exe
 
 # golang
