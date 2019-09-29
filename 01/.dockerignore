@@ -4,7 +4,5 @@ docs
 
 # file
 coverage.*
-
-# binary
 go-misc
 go-misc.exe

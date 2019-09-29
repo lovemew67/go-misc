@@ -2,11 +2,7 @@
 .vscode
 
 # files
-
-# binary
-/go-misc
-/go-misc.exe
-
-# golang
 /go.mod
 /go.sum
+/go-misc
+/go-misc.exe

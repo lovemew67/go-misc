@@ -3,9 +3,5 @@
 
 # files
 /coverage.*
-
-# binary
 /01
 /01.exe
-
-# golang
