@@ -11,7 +11,7 @@ some miscellaneous golang code for practice.
 | 05    | goroutine, channel        |
 | 06    | json processing           |
 | 07    | custom struct tag         |
-| 08    | std in/out/err (TODO)     |
+| 08    | std in/out/err            |
 | 09    | file io (TODO)            |
 | 10    | http (TODO)               |
 | 11    | worker model (TODO)       |

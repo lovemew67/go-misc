@@ -1,0 +1,7 @@
+FILELOG 2019/09/29 13:01:04.305862 main.go:55: >>> type 'count' to get current count
+FILELOG 2019/09/29 13:01:10.847405 main.go:61: got: het
+FILELOG 2019/09/29 13:01:10.847405 main.go:67: invalid command
+FILELOG 2019/09/29 13:01:10.847405 main.go:69: >>> type 'count' to get current count
+FILELOG 2019/09/29 13:01:16.702790 main.go:61: got: count
+FILELOG 2019/09/29 13:01:16.702790 main.go:64: curent count: 12
+FILELOG 2019/09/29 13:01:16.702790 main.go:69: >>> type 'count' to get current count
