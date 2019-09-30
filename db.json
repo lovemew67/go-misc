@@ -1,0 +1,10 @@
+{
+    "posts": [
+        {
+          "userId": 1,
+          "id": 1,
+          "title": "fake title: 1",
+          "body": "fake body: 1"
+        }
+    ]
+}

@@ -12,7 +12,6 @@ some miscellaneous golang code for practice.
 | 06    | json processing           |
 | 07    | custom struct tag         |
 | 08    | std in/out/err            |
-| 09    | file io (TODO)            |
+| 09    | file io                   |
 | 10    | http (TODO)               |
 | 11    | worker model (TODO)       |
-| 12    | web crawler (TODO)        |
