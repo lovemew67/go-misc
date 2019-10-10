@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package echo;
+
+service EchoService {
+  rpc echo(HiRequest) returns (HiResponse) {}
+}
+
+message HiRequest {
+  string message = 1;
+  map<string, string> tracedata = 2;
+}
+
+message HiResponse {
+  bool success = 1;
+  string message = 2;
+  map<string, string> tracedata = 3;
+}

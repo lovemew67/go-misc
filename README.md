@@ -14,5 +14,6 @@ some miscellaneous golang code for practice.
 | 08    | std in/out/err            |
 | 09    | file io                   |
 | 10    | http request/response     |
-| 11    | command pattern (TODO)    |
-| 12    | worker model (TODO)       |
+| 11    | command pattern           |
+| 12    | grpc                      |
+| 13    | worker model (TODO)       |

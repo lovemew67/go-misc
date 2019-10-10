@@ -22,7 +22,7 @@ a
 			log.Panicln(errViper)
 		}
 
-		log.Printf("read config from viper: %s", viper.GetString("app.name"))
+		log.Printf("read config: 'app.name' from viper: %s", viper.GetString("app.name"))
 	},
 }
 
