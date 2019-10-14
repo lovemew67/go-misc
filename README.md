@@ -16,4 +16,4 @@ some miscellaneous golang code for practice.
 | 10    | http request/response     |
 | 11    | command pattern           |
 | 12    | grpc                      |
-| 13    | worker model (TODO)       |
+| 13    | golang flag               |
