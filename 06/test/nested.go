@@ -26,7 +26,7 @@ func Raw2() {
         }
     `)
 	var b AppWithOrg
-	json.Unmarshal(data, &b)
+	_ = json.Unmarshal(data, &b)
 	fmt.Printf("%#v\n", b)
 
 	a := AppWithOrg{

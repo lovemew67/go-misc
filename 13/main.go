@@ -61,7 +61,7 @@ func init() {
 	flag.Float64Var(&floatValue, "floatValue", 0.0, "help message for float value")
 	flag.BoolVar(&boolValue, "boolValue", false, "help message for bool value")
 
-	flag.Var(&mySlice, "slice", "a slice of some integers")
+	flag.Var(&mySlice, "mySlice", "a slice of some integers")
 
 	flag.Usage = func() {
 		log.Println("**Some other message here**")
@@ -73,20 +73,20 @@ func main() {
 
 	flag.Parse()
 
-	log.Println(flag.NArg())
+	log.Printf("NArg: %d", flag.NArg())
 	for i, arg := range flag.Args() {
-		log.Printf("%s %s\n", flag.Arg(i), arg)
+		log.Printf("index: %d, %s & %s\n", i, flag.Arg(i), arg)
 	}
 
-	log.Println(*intPointer)
-	log.Println(*stringPointer)
-	log.Println(*floatPointer)
-	log.Println(*boolPointer)
+	log.Printf("intPointer: %d", *intPointer)
+	log.Printf("stringPointer: %s", *stringPointer)
+	log.Printf("floatPointer: %f", *floatPointer)
+	log.Printf("boolPointer: %t", *boolPointer)
 
-	log.Println(intValue)
-	log.Println(stringValue)
-	log.Println(floatValue)
-	log.Println(boolValue)
+	log.Printf("intValue: %d", intValue)
+	log.Printf("stringValue: %s", stringValue)
+	log.Printf("floatValue: %f", floatValue)
+	log.Printf("boolValue: %t", boolValue)
 
-	log.Println(mySlice)
+	log.Printf("mySlice: %+v", mySlice)
 }
