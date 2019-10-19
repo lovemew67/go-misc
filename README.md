@@ -21,9 +21,6 @@ some miscellaneous golang code for practice.
 | 15    | crypo                        |
 | 16    | spf13 afero                  |
 | 17    | spf13 viper                  |
-| 18    | spf13 cobra basic            |
-| 19    | context (TODO)               |
-| 20    | opentracing (TODO)           |
-| 21    | logrus (TODO)                |
-| 22    | gin (TODO)                   |
-| 23    | recovered-worker pool (TODO) |
+| 18    | spf13 cobra - basic          |
+| 19    | spf13 cobra - viper (TODO)   |
+| last  | recovered-worker pool (TODO) |
