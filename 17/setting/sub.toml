@@ -1,0 +1,8 @@
+[top]
+    tree = 1
+
+[top.sub]
+    leaf = false
+
+[top.sub.tree]
+    leaf = true

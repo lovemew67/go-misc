@@ -1,0 +1,7 @@
+key = "value"
+
+[top]
+  k1 = "v1"
+  k2 = "case-insensitive"
+  k3 = "v3"
+  k4 = "v4"

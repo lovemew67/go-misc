@@ -20,7 +20,7 @@ some miscellaneous golang code for practice.
 | 14    | spf13 flag                  |
 | 15    | crypo                       |
 | 16    | spf13 afero (TODO)          |
-| 17    | spf13 viper (TODO)          |
+| 17    | spf13 viper                 |
 | 18    | spf13 cobra (TODO)          |
 | 19    | context (TODO)              |
 | 20    | opentracing (TODO)          |
