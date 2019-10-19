@@ -1,9 +1,0 @@
-package main
-
-import (
-  	"github.com/lovemew67/go-misc/18/command"
-)
-
-func main() {
-	command.Execute()
-}

@@ -2,6 +2,7 @@
 
 some miscellaneous golang code for practice.
 
+## practices
 | index | subject                      |
 |-------|------------------------------|
 | 01    | selenium, file processing    |
@@ -23,4 +24,9 @@ some miscellaneous golang code for practice.
 | 17    | spf13 viper                  |
 | 18    | spf13 cobra - basic          |
 | 19    | spf13 cobra - viper (TODO)   |
-| last  | recovered-worker pool (TODO) |
+
+## projects
+| index    | subject                      |
+|----------|------------------------------|
+| examples | download and install         |
+| workers  | recovered-worker pool (TODO) |
