@@ -19,11 +19,11 @@ some miscellaneous golang code for practice.
 | 13    | golang flag                 |
 | 14    | spf13 flag                  |
 | 15    | crypo                       |
-| 16    | spf13 afero (TODO)          |
+| 16    | spf13 afero                 |
 | 17    | spf13 viper                 |
 | 18    | spf13 cobra (TODO)          |
 | 19    | context (TODO)              |
 | 20    | opentracing (TODO)          |
 | 21    | logrus (TODO)               |
-| 22    | Gin (TODO)                  |
-| 23    | Worker-Recover Model (TODO) |
+| 22    | gin (TODO)                  |
+| 23    | recovered worker model      |
