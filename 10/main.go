@@ -3,10 +3,10 @@ package main
 import (
 	"bytes"
 	"fmt"
+	"io/ioutil"
 	"log"
 	"net/http"
 	"net/url"
-	"io/ioutil"
 	"strings"
 )
 
@@ -21,10 +21,10 @@ func rootHandler(w http.ResponseWriter, req *http.Request) {
 
 func helloHandler(w http.ResponseWriter, req *http.Request) {
 	for name, headers := range req.Header {
-        for _, h := range headers {
-            fmt.Fprintf(w, "%v: %v\n", name, h)
-        }
-    }
+		for _, h := range headers {
+			fmt.Fprintf(w, "%v: %v\n", name, h)
+		}
+	}
 }
 
 func main() {
@@ -34,7 +34,7 @@ func main() {
 		http.HandleFunc("/hello", helloHandler)
 		_ = http.ListenAndServe(":8080", nil)
 	}()
-	
+
 	// send get request
 	// https://www.kancloud.cn/digest/batu-go/153529
 	response, errGet := http.Get("http://localhost:8080")
@@ -52,7 +52,7 @@ func main() {
 	// https://www.kancloud.cn/digest/batu-go/153529
 	postBody := "{\"id\":2}"
 	response, errPost := http.Post(
-		"https://my-json-server.typicode.com/lovemew67/go-misc/posts", 
+		"https://jsonplaceholder.typicode.com/posts",
 		"application/json",
 		bytes.NewBuffer([]byte(postBody)),
 	)
@@ -69,7 +69,7 @@ func main() {
 	// send post form request
 	// https://www.kancloud.cn/digest/batu-go/153529
 	v := url.Values{}
-    v.Set("username", "go")
+	v.Set("username", "go")
 	v.Set("password", "misc")
 	reqBody := ioutil.NopCloser(strings.NewReader(v.Encode()))
 	httpClient := http.Client{}
@@ -79,7 +79,7 @@ func main() {
 		reqBody,
 	)
 	request.Header.Set(
-		"Content-Type", 
+		"Content-Type",
 		"application/x-www-form-urlencoded;param=value",
 	)
 	response, _ = httpClient.Do(request)
@@ -93,7 +93,7 @@ func main() {
 	// send post from request
 	// https://studygolang.com/articles/9467
 	postParam := url.Values{
-		"mobile":      {
+		"mobile": {
 			"xxxxxx",
 		},
 		"isRemberPwd": {
@@ -112,7 +112,7 @@ func main() {
 	patchBody := "{\"title\": \"fake title: 2\"}"
 	request, _ = http.NewRequest(
 		http.MethodPatch,
-		"https://my-json-server.typicode.com/lovemew67/go-misc/posts/1", 
+		"https://jsonplaceholder.typicode.com/posts/1",
 		bytes.NewBuffer([]byte(patchBody)),
 	)
 	response, _ = httpClient.Do(request)
@@ -126,7 +126,7 @@ func main() {
 	// send get requet with http client
 	request, _ = http.NewRequest(
 		http.MethodGet,
-		"https://my-json-server.typicode.com/lovemew67/go-misc/posts/1",
+		"https://jsonplaceholder.typicode.com/posts/1",
 		nil,
 	)
 	response, _ = httpClient.Do(request)
@@ -137,5 +137,6 @@ func main() {
 	}
 	log.Println(string(responseBody))
 
-	for {}
+	for {
+	}
 }
