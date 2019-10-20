@@ -67,15 +67,26 @@ var (
 
 	mySlice2 MySlice
 
-	ip *int
+	ip  *int
 	ip2 *int
 )
 
 func wordSepNormalizeFunc(f *pflag.FlagSet, name string) pflag.NormalizedName {
+	// You want -, _, and . in flags to compare the same. aka --my-flag == --my_flag == --my.flag
 	from := []string{"-", "_"}
 	to := "."
 	for _, sep := range from {
 		name = strings.Replace(name, sep, to, -1)
+	}
+	return pflag.NormalizedName(name)
+}
+
+func aliasNormalizeFunc(f *pflag.FlagSet, name string) pflag.NormalizedName {
+	// You want to alias two flags. aka --old-flag-name == --new-flag-name
+	switch name {
+	case "old-flag-name":
+		name = "new-flag-name"
+		break
 	}
 	return pflag.NormalizedName(name)
 }
@@ -112,6 +123,7 @@ func init() {
 	pflag.Lookup("flagname").NoOptDefVal = "4321"
 
 	// Mutating or "Normalizing" Flag names
+	pflag.CommandLine.SetNormalizeFunc(aliasNormalizeFunc)
 	pflag.CommandLine.SetNormalizeFunc(wordSepNormalizeFunc)
 
 	// Deprecating a flag or its shorthand

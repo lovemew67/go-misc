@@ -22,8 +22,13 @@ some miscellaneous golang code for practice.
 | 15    | crypo                        |
 | 16    | spf13 afero                  |
 | 17    | spf13 viper                  |
-| 18    | spf13 cobra - basic          |
-| 19    | spf13 cobra - viper (TODO)   |
+| 18    | spf13 viper - precedence     |
+| 19    | spf13 viper - slice config   |
+| 20    | spf13 viper - normalize      |
+| 21    | spf13 cobra - basic          |
+| 22    | spf13 cobra - home config    |
+| 23    | cobra x viper x pflag - 1    |
+| 24    | cobra x viper x pflag - 2    |
 
 ## projects
 | index    | subject                      |

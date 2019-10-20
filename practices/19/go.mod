@@ -1,4 +1,4 @@
-module github.com/lovemew67/go-misc/practices/18
+module github.com/lovemew67/go-misc/practices/19
 
 go 1.12
 

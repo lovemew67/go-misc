@@ -16,7 +16,8 @@ var (
 	userLicense string
 
 	rootCmd = &cobra.Command{
-		Use: "18",
+		Use: "21 [commands]",
+		// There is not context between Pre/Post Run hooks
 		PersistentPreRun: func(cmd *cobra.Command, args []string) {
 			fmt.Printf("Inside rootCmd PersistentPreRun with args: %v\n", args)
 		},
@@ -153,7 +154,7 @@ func init() {
 
 	// Required flags
 	rootCmd.PersistentFlags().Bool("viper", true, "use Viper for configuration")
-	_ = rootCmd.MarkFlagRequired("viper")
+	_ = rootCmd.MarkFlagRequired("viper") // work on local flag
 
 	// Bind Flags with Config
 	// 	**Note**, that the variable `author` will not be set to the value from config,
