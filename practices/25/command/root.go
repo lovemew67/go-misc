@@ -79,6 +79,8 @@ func init() {
 
 	// Add Subcommand
 	sub2Cmd.AddCommand(sub3Cmd)
+	sub1Cmd.AddCommand(sub3Cmd)
 	sub1Cmd.AddCommand(sub2Cmd)
+	rootCmd.AddCommand(sub3Cmd)
 	rootCmd.AddCommand(sub1Cmd)
 }

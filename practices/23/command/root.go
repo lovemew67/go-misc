@@ -18,6 +18,7 @@ var (
 		Use: "sub1",
 		Run: func(cmd *cobra.Command, args []string) {
 			fmt.Printf("Inside sub1Cmd Run with args: %v\n", args)
+			fmt.Println(`viper.GetString("test"):`, viper.GetString("test"))
 		},
 	}
 
@@ -52,8 +53,9 @@ func init() {
 	sub1Cmd.Flags().StringP("version", "b", "", "version sub1")
 
 	// flag default in viper
-	sub1Cmd.Flags().StringP("test", "e", "", "test sub1")
-	_ = viper.BindPFlag("test", sub1Cmd.Flags().Lookup("test"))
+	sub1Cmd.Flags().StringP("test", "e", "test sub1", "test sub1")
+	// _ = viper.BindPFlag("test", sub1Cmd.Flags().Lookup("test"))
+	_ = viper.BindPFlags(sub1Cmd.Flags())
 	// viper.SetDefault("test", "NAME HERE")
 
 	// sub2Cmd Flags
