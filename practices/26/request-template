@@ -1,0 +1,14 @@
+{ 
+    "id":"{{.Id}}", 
+    "type":"page",
+    "title":"Howard Zhou's Page",
+    "body":{
+        "storage":{
+            "value": "{{.Content}}",
+            "representation":"storage"
+        }
+    },
+    "version":{
+        "number": {{.Version}}
+    }
+}
