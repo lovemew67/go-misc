@@ -3,6 +3,7 @@
 
 # files
 .DS_Store
+*.log
 /go.mod
 /go.sum
 /go-misc

@@ -1,4 +1,4 @@
-module github.com/lovemew67/go-misc/practices/25
+module github.com/lovemew67/go-misc/projects/templates
 
 go 1.12
 

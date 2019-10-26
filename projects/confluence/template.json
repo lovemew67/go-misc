@@ -1,0 +1,21 @@
+{
+    "pages": [
+        {
+            "id": "00000",
+            "contents": [
+                {
+                    "type": "drawio",
+                    "source": "templates/drawio/template.drawio"
+                },
+                {
+                    "type": "markdown",
+                    "source": "templates/markdown/template.drawio"
+                },
+                {
+                    "type": "plantuml",
+                    "source": "templates/drawio/template.drawio"
+                }
+            ]
+        }
+    ]
+}
