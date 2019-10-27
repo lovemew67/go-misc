@@ -1,3 +1,0 @@
-# confluence syncer
-
-WIP

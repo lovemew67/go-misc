@@ -1,0 +1,8 @@
+# folder
+.vscode
+
+# files
+.DS_Store
+*.log
+confluence-hater
+confluence-hater.exe
