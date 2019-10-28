@@ -2,6 +2,10 @@
 
 some miscellaneous golang code for practice.
 
+## gobyexamples
+
+just forked from `https://github.com/mmcgrana/gobyexample`. contents credit to `https://github.com/mmcgrana`
+
 ## practices
 
 | index | subject                      |
