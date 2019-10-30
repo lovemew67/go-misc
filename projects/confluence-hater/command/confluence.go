@@ -34,11 +34,11 @@ const (
 	formKeyfile    = "file"
 	formKeyComment = "comment"
 
-	logFileFlagLong = "filelog"
+	logFileFlagLong  = "filelog"
 	logFileFlagShort = "f"
-	logFileName = "confluence-hater.log"
+	logFileName      = "confluence-hater.log"
 
-	viperKeyConfluenceUrl = "confluence.hater.url"
+	viperKeyConfluenceUrl      = "confluence.hater.url"
 	viperKeyConfluenceUsername = "confluence.hater.username"
 	viperKeyConfluencePassword = "confluence.hater.password"
 
@@ -48,9 +48,9 @@ const (
 )
 
 const (
-	usage = `confluence-hater [sync request in json]`
+	usage     = `confluence-hater [sync request in json]`
 	shortHelp = `confluence hater help engineeeeeeeeeeeeeeers to sync/upload/update markdown/plantuml/drawio contents to confluence pages`
-	longHelp = `  ______             ___ _                                 _     _                       
+	longHelp  = `  ______             ___ _                                 _     _                       
  / _____)           / __) |                               | |   | |      _               
 | /      ___  ____ | |__| |_   _  ____ ____   ____ ____   | |__ | | ____| |_  ____  ____ 
 | |     / _ \|  _ \|  __) | | | |/ _  )  _ \ / ___) _  )  |  __)| |/ _  |  _)/ _  )/ ___)
@@ -138,7 +138,7 @@ var (
 var (
 	drawioTemplateHeader = `<ac:structured-macro ac:name=\"drawio\" ac:schema-version=\"1\" ac:macro-id=\"88888888-8888-8888-8888-888888888888\"><ac:parameter ac:name=\"border\">true</ac:parameter><ac:parameter ac:name=\"viewerToolbar\">true</ac:parameter><ac:parameter ac:name=\"fitWindow\">false</ac:parameter><ac:parameter ac:name=\"diagramName\">`
 	// attachment file name
-	drawioTemplateInner  = `</ac:parameter><ac:parameter ac:name=\"simpleViewer\">false</ac:parameter><ac:parameter ac:name=\"width\" /><ac:parameter ac:name=\"diagramWidth\">480</ac:parameter><ac:parameter ac:name=\"revision\">`
+	drawioTemplateInner = `</ac:parameter><ac:parameter ac:name=\"simpleViewer\">false</ac:parameter><ac:parameter ac:name=\"width\" /><ac:parameter ac:name=\"diagramWidth\">480</ac:parameter><ac:parameter ac:name=\"revision\">`
 	// attachment revision
 	drawioTemplateFooter = `</ac:parameter><ac:parameter ac:name=\"\" /></ac:structured-macro>`
 )
@@ -162,9 +162,9 @@ type getPageAttachmentResultLink struct {
 }
 
 type getPageAttachmentsResult struct {
-	ID    string `json:"id"`
-	Title string `json:"title"`
-	Links  getPageAttachmentResultLink `json:"_links"`
+	ID    string                      `json:"id"`
+	Title string                      `json:"title"`
+	Links getPageAttachmentResultLink `json:"_links"`
 }
 
 type getPageAttachmentsResponse struct {
@@ -195,7 +195,7 @@ type parsePageRequest struct {
 }
 
 type pageProcessAttachmentContext struct {
-	ID string
+	ID      string
 	Version string
 }
 
@@ -208,10 +208,11 @@ type pageProcessContext struct {
 
 var (
 	confluenceCmd = &cobra.Command{
-		Use: usage,
-		Short: shortHelp,
-		Long: longHelp,
-		Args: cobra.ExactArgs(1),
+		Use:     usage,
+		Short:   shortHelp,
+		Long:    longHelp,
+		Args:    cobra.ExactArgs(1),
+		Version: fmt.Sprintf("info: \n\ttag: %s\n\tcommit: %s\n\tbuild date: %s", gitCommit, appVersion, buildDate),
 		Run: func(cmd *cobra.Command, args []string) {
 			// init parse request
 			handlerName := "confluenceCmd"
@@ -427,7 +428,7 @@ func handleDrawioAttachment(filePath string, ppc *pageProcessContext) (fileName,
 	} else {
 		logger.Printf("[%s] going to update, filePath: %s, fileName: %s, attachment id: %s, current version: %s", handlerName, filePath, fileName, ppac.ID, ppac.Version)
 		i, _ := strconv.Atoi(ppac.Version)
-		version = strconv.Itoa(i+1)
+		version = strconv.Itoa(i + 1)
 		err = apiUploadOrUpdatePageAttachment(ppc.ID, ppac.ID, filePath, fileName, false)
 	}
 	return
@@ -535,7 +536,7 @@ func apiGetPageMetadata(id string) (version int, title string, err error) {
 
 	// get metadata
 	version = contentMetadata.Version.Number
-	title   = contentMetadata.Title
+	title = contentMetadata.Title
 	return
 }
 
