@@ -2,9 +2,21 @@
 
 some miscellaneous golang code for practice.
 
+## leetcode
+
+| index | subject                          |
+|-------|----------------------------------|
+| 00001 | two-sum                          |
+| 00167 | two-sum-ii-input-array-is-sorted |
+
 ## gobyexamples
 
-just forked from `https://github.com/mmcgrana/gobyexample`. contents credit to `https://github.com/mmcgrana`
+forked from `https://github.com/mmcgrana/gobyexample`.
+
+| index | subject                          |
+|-------|----------------------------------|
+| 01    | hello world                      |
+| 74    | exit                             |
 
 ## practices
 
