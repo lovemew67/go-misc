@@ -130,9 +130,9 @@ var (
 )
 
 var (
-	pictureTemplateHeader = `<ac:structured-macro ac:name=\"view-file\" ac:schema-version=\"1\" ac:macro-id=\"88888888-8888-8888-8888-888888888888\"><ac:parameter ac:name=\"name\"><ri:attachment ri:filename=\"`
-	// attachment file name
-	pictureTemplateFooter = `\" /></ac:parameter><ac:parameter ac:name=\"height\">250</ac:parameter></ac:structured-macro>`
+	// pictureTemplateHeader = `<ac:structured-macro ac:name=\"view-file\" ac:schema-version=\"1\" ac:macro-id=\"88888888-8888-8888-8888-888888888888\"><ac:parameter ac:name=\"name\"><ri:attachment ri:filename=\"`
+	// // attachment file name
+	// pictureTemplateFooter = `\" /></ac:parameter><ac:parameter ac:name=\"height\">250</ac:parameter></ac:structured-macro>`
 )
 
 var (
