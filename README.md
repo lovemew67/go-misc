@@ -1,6 +1,6 @@
 # go-misc
 
-some miscellaneous golang code for practice.
+some miscellaneous `golang` code for practice.
 
 ## leetcode
 
@@ -11,7 +11,7 @@ some miscellaneous golang code for practice.
 
 ## gobyexamples
 
-forked from `https://github.com/mmcgrana/gobyexample`.
+resources credit to: [gobyexample](https://github.com/mmcgrana/gobyexample)
 
 | index | subject                          |
 |-------|----------------------------------|
