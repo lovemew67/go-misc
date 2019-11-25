@@ -48,10 +48,3 @@ resources credit to: [gobyexample](https://github.com/mmcgrana/gobyexample)
 | 24    | cobra x viper x pflag - 2    |
 | 25    | cobra x viper x pflag - 3    |
 | 26    | context (WIP)                |
-
-## projects
-
-| index      | subject                      |
-|------------|------------------------------|
-| examples   | download and execute         |
-| confluence | confluence api               |

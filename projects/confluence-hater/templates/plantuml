@@ -1,6 +1,0 @@
-@startuml
-
-confluence -> hater
-hater -> confluence
-
-@enduml
