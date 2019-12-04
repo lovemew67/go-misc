@@ -47,4 +47,5 @@ resources credit to: [gobyexample](https://github.com/mmcgrana/gobyexample)
 | 23    | cobra x viper x pflag - 1    |
 | 24    | cobra x viper x pflag - 2    |
 | 25    | cobra x viper x pflag - 3    |
-| 26    | context (WIP)                |
+| 26    | call forward logic           |
+| 27    | context (WIP)                |
