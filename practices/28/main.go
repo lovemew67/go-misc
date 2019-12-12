@@ -60,6 +60,13 @@ func main() {
 	newInstance.Info("gggg")
 	requestLogger.Info("1111")
 
+	// new logrus logger
+	contextLogger := log.WithFields(log.Fields{
+		"common": "this is a common field",
+		"other":  "I also should be logged always",
+	})
+	contextLogger.Info("log something")
+	
 	log.Trace("Something very low level.")
 	log.Debug("Useful debugging information.")
 	log.Info("Something noteworthy happened!")
