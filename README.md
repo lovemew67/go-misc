@@ -49,7 +49,7 @@ resources credit to: [gobyexample](https://github.com/mmcgrana/gobyexample)
 | 25    | cobra x viper x pflag - 3    |
 | 26    | call forward logic           |
 | 27    | context                      |
-| 28    | logrus (WIP)                 |
-| 29    | errors (WIP)                 |
+| 28    | logrus                       |
+| 29    | errors (1.13, WIP)           |
 | 30    | opentracing (WIP)            |
  
