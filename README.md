@@ -50,6 +50,7 @@ resources credit to: [gobyexample](https://github.com/mmcgrana/gobyexample)
 | 26    | call forward logic           |
 | 27    | context                      |
 | 28    | logrus                       |
-| 29    | errors (1.13, WIP)           |
-| 30    | opentracing (WIP)            |
+| 29    | versioning                   |
+| 30    | errors (1.13, WIP)           |
+| 31    | opentracing (WIP)            |
  
