@@ -25,7 +25,7 @@ func main() {
 		"E": "D",
 	}
 	ansMap := map[string]string{}
-	for k, _ := range forwardMap {
+	for k := range forwardMap {
 		current := k
 		forwardPath := []string{k}
 		loop := true
@@ -41,6 +41,8 @@ func main() {
 		// 		loop = false
 		// 	}
 		// }
+
+		// FIXME: fix loop - 1 2 3 2
 		for loop {
 			dest, ok := forwardMap[current]
 			if ok && dest != k {
