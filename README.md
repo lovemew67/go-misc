@@ -51,6 +51,7 @@ resources credit to: [gobyexample](https://github.com/mmcgrana/gobyexample)
 | 27    | context                      |
 | 28    | logrus                       |
 | 29    | versioning                   |
-| 30    | errors (1.13, WIP)           |
+| 30    | errors                       |
 | 31    | mock                         |
 | 32    | opentracing (WIP)            |
+|         to be continued ...          |
