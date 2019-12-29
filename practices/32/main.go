@@ -42,7 +42,7 @@ func main() {
 		opentracing.TextMap,
 		opentracing.TextMapCarrier(testCarrier))
 	if err != nil {
-		log.Printf("fuck err: %+v", err)
+		log.Printf("oh no, it's err: %+v", err)
 		sp = opentracing.StartSpan("span a")
 	} else {
 		sp = opentracing.StartSpan(

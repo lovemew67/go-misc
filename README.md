@@ -53,5 +53,5 @@ resources credit to: [gobyexample](https://github.com/mmcgrana/gobyexample)
 | 29    | versioning                   |
 | 30    | errors                       |
 | 31    | mock                         |
-| 32    | opentracing (WIP)            |
+| 32    | opentracing                  |
 |         to be continued ...          |
