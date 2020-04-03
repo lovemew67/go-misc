@@ -54,4 +54,5 @@ resources credit to: [gobyexample](https://github.com/mmcgrana/gobyexample)
 | 30    | errors                       |
 | 31    | mock                         |
 | 32    | opentracing                  |
+| 33    | fsnotify                     |
 |         to be continued ...          |
