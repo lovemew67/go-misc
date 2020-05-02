@@ -60,6 +60,7 @@ func NewAPIServerCmd() *cobra.Command {
 			router.NoRoute(func(c *gin.Context) {
 				s, _ := ioutil.ReadAll(c.Request.Body)
 				resp := gin.H{
+					"server":                    "http server 02",
 					"params":                    c.Params,
 					"keys":                      c.Keys,
 					"accepted":                  c.Accepted,
