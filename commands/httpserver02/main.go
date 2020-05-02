@@ -36,7 +36,7 @@ func NewAPIServerCmd() *cobra.Command {
 	)
 
 	var apiServerCmd = &cobra.Command{
-		Use:   "httpserver01",
+		Use:   "httpserver02",
 		Short: "start the restful api server - http server 02",
 		Long:  `run the web api server by given config - http server 02`,
 		Run: func(cmd *cobra.Command, args []string) {
