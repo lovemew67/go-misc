@@ -2,6 +2,13 @@
 
 some miscellaneous `golang` code for practice.
 
+## commands
+
+| subject        | description |
+|----------------|-------------|
+| http-server-01 |             |
+| http-server-02 |             |
+
 ## leetcode
 
 | index | subject                          |

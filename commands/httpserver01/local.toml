@@ -1,0 +1,7 @@
+[http]
+  port = "80"
+  tls_port = "443"
+  mode = "release"
+  cert = "cert.pem"
+  key = "key.pem"
+  encrypt_mode = "both"
