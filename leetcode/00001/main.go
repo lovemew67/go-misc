@@ -6,7 +6,6 @@ import (
 
 func init() {
 	log.SetFlags(log.LstdFlags | log.LUTC | log.Lmicroseconds | log.Lshortfile)
-	log.Println("Hello World: 00001_two-sum")
 }
 
 func main() {

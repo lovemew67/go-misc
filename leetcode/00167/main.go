@@ -6,7 +6,6 @@ import (
 
 func init() {
 	log.SetFlags(log.LstdFlags | log.LUTC | log.Lmicroseconds | log.Lshortfile)
-	log.Println("Hello World: 00167_two-sum-ii-input-array-is-sorted")
 }
 
 func main() {
