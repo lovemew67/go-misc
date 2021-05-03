@@ -9,13 +9,6 @@ some miscellaneous `golang` code for practice.
 | http-server-01 |             |
 | http-server-02 |             |
 
-## leetcode
-
-| index | subject                          |
-|-------|----------------------------------|
-| 00001 | two-sum                          |
-| 00167 | two-sum-ii-input-array-is-sorted |
-
 ## gobyexamples
 
 resources credit to: [gobyexample](https://github.com/mmcgrana/gobyexample)
